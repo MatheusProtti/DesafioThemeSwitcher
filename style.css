@@ -1,0 +1,73 @@
+:root {
+  --dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  position: absolute;
+  top: 600px;
+}
+
+.containerSun{
+    height: 100vh;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerMoon{
+  height: 100vh;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.switcher{
+    width: 235.38px;
+    height: 102px;
+    background-color: var(--label);
+    border-radius: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.sun,
+.moon {
+    height: 94px;
+    width: 94px;
+}
+
+.circleSun{
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+    background-color: var(--light);
+    border: none;
+    position: relative;
+    left: -70px;
+    transition: .6s;
+    cursor: pointer;
+}
+.circleMoon{
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+    background-color: var(--light);
+    border: none;
+    position: relative;
+    left: 70px;
+    transition: .6s;
+    cursor: pointer;
+}
+
